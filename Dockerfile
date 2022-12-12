@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Make port 80 available to the world outside this container
-EXPOSE $PORT
+EXPOSE 80
 
 # Run the migration commands
 RUN python manage.py makemigrations
